@@ -1,0 +1,25 @@
+<%- include ("head") %>
+<%- include ("navbar") %>
+<div class="col-md-5 m-auto">
+    <h2 class="fw-bold mb-2 text-uppercase">Sign up</h2>
+    <form action="auth/signup" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Name</label>
+            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword2" class="form-label mt-4">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+</div>
+<%- include ("footer") %>

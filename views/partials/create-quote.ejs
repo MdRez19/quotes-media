@@ -1,0 +1,22 @@
+<%- include ("head") %>
+<%- include ("navbar") %>
+<div class="row page_content">
+    <div class="col-md-10 m-auto">
+        <form action="/create-quote" method="post">
+            <h3>Create Quote.</h3>
+            <div class="mb-3">
+                <label for="create-quote" class="form-label">quotes</label>
+                <textarea name="quote" class="form-control" id="create-quote" col="30" row="10" required
+                          maxlength="100"></textarea>
+                <div id="emailHelp" class="form-text text-danger">Max 100 characters</div>
+            </div>
+            <div class="mb-3">
+                <label for="color-input" class="form-label">choose background color for quote</label>
+                <input type="color" class="form-control form-control-color" id="color-input" name="bg_color"
+                       value="#46244c" title="choose your color">
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+</div>
+<%- include ("footer") %>
